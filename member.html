@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Membership</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+<body>
+  <header>
+    <h1>YTU SE Team Membership</h1>
+  </header>
+  <div class="input-area">
+    <div class="labelled-pair">
+      <label for="username">Username</label>
+      <input id="inputUsername" type="text" name="username" value="">
+    </div>
+    <div class="labelled-pair">
+      <label for="name">Name</label>
+      <input id="inputName" type="text" name="name" value="">
+    </div>
+    <div class="labelled-pair">
+      <label for="team">Team</label>
+      <select name="team"  id="inputTeam">
+        <option value="FE">FE</option>
+        <option value="BE">BE</option>
+        <option value="DK">DK</option>
+        <option value="DB">DB</option>
+        <option value="ALL">ALL</option>
+      </select>
+    </div>
+    <div class="labelled-pair">
+      <label for="" style="color: #fff;">Action</label>
+      <span id="addBtn" onclick="addRow()">+ Add</span>
+    </div>
+  </div>
+  <div class="display-area">
+    <h2>List of Members</h2>
+    <hr>
+    <br>
+    <table id="displayTable">
+      <tr class="head-row">
+        <th>Username</th>
+        <th>Name</th>
+        <th>Team</th>
+      </tr>
+      <tr class="data-row">
+        <td>aungkaungkhant2</td>
+        <td>Aung Kaung Khant</td>
+        <td>FE</td>
+        <td class="actionBtns"><button type="button" name="button" onclick="editRow(this)"><i class="fas fa-pencil-alt"></i></button><button type="button" name="button" onclick="deleteRow(this)"><i class="fas fa-trash"></i></button></td>
+      </tr>
+      <tr class="data-row">
+        <td>johndoe</td>
+        <td>John Doe</td>
+        <td>ALL</td>
+        <td class="actionBtns"><button type="button" name="button" onclick="editRow(this)"><i class="fas fa-pencil-alt"></i></button><button type="button" name="button" onclick="deleteRow(this)"><i class="fas fa-trash"></i></button></td>
+      </tr>
+    </table>
+  </div>
+  <!-- Global Scripts -->
+  <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>

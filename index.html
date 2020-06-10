@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Membership</title>
+  <link rel="stylesheet" type="text/css" href="indexstyle.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+<body>
+  <main>
+    <div class="card-img">
+      <div class="img-holder">
+      </div>
+      <div class="caption-holder">
+        Sign in
+      </div>
+    </div>
+    <div class="card-body">
+      <form action="javascript:login();" method="post">
+        <div class="labelled-pair">
+          <label for="username">Username</label>
+          <input id="usernameInput" type="text" name="username" value="" minlength="6" maxlength="20" required>
+        </div>
+        <div class="labelled-pair">
+          <label for="password">Password</label>
+          <input id="passwordInput" type="text" name="password" value="" minlength="8" maxlength="20" required>
+        </div>
+        <br>
+        <div class="extra-pair">
+          <div>
+            <input type="checkbox" name="remember" value="">Remember me
+          </div>
+          <div>
+            <a href="#">Forgot password?</a>
+          </div>
+        </div>
+        <br>
+        <div class="btn-area">
+          <button id="loginBtn" type="submit" name="button">Login</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <script type="text/javascript" src="indexscript.js"></script>
+</body>
+
+</html>
